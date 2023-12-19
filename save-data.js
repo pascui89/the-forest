@@ -1,13 +1,29 @@
 const { exec } = require('child_process');
 
-exec('git add . && git commit -m "Latest server info" && git push -u origin main', (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Se produjo un error: ${error.message}`);
-        return;
+function executeCommand(command) {
+    return new Promise((resolve, reject) => {
+        exec(command, (error, stdout, stderr) => {
+            if (error) {
+                reject(`Se produjo un error: ${error.message}`);
+                return;
+            }
+            if (stderr) {
+                reject(`Error de Git: ${stderr}`);
+                return;
+            }
+            resolve(`Salida: ${stdout}`);
+        });
+    });
+}
+
+async function runCommands() {
+    try {
+        await executeCommand('git add .');
+        await executeCommand('git commit -m "Latest server info"');
+        await executeCommand('git push -u origin main');
+    } catch (error) {
+        console.error(error);
     }
-    if (stderr) {
-        console.error(`Error: ${stderr}`);
-        return;
-    }
-    console.log(`Salida: ${stdout}`);
-});
+}
+
+runCommands();
