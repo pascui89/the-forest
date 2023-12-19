@@ -8,8 +8,7 @@ const executeCommand = (command) => {
                 return;
             }
             if (stderr) {
-                reject(`Error de Git: ${stderr}`);
-                return;
+                console.info(`Error de Git: ${stderr}`);
             }
             resolve(`Salida: ${stdout}`);
         });
