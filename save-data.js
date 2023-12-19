@@ -1,6 +1,6 @@
 const { exec } = require('child_process');
 
-function executeCommand(command) {
+const executeCommand = (command) => {
     return new Promise((resolve, reject) => {
         exec(command, (error, stdout, stderr) => {
             if (error) {
@@ -16,7 +16,7 @@ function executeCommand(command) {
     });
 }
 
-async function runCommands() {
+const runCommands = async () => {
     try {
         await executeCommand('git add .');
         await executeCommand('git commit -m "Latest server info"');
