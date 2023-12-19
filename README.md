@@ -69,3 +69,8 @@ Este script está diseñado para ejecutar comandos de Git como agregar archivos,
 
 ### Script `load-data.js`
 Similar al script `save-data.js`, este script permite ejecutar una secuencia de comandos de Git para sincronizar cambios con un repositorio remoto. Sigue los mismos pasos que para `load-data.js`, asegurándote de que el nombre del archivo corresponda al script que deseas ejecutar.
+
+## FINAL BOSS
+Tenéis dos cmds que os ahorran los pasos anteriores nombrados como:
+- `load.cmd`
+- `save.cmd`
