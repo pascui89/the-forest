@@ -47,7 +47,7 @@ Antes de empezar a utilizar los scripts, debes clonar el repositorio donde se en
 2. Navega al directorio donde deseas clonar el repositorio.
 3. Ejecuta el siguiente comando (reemplaza `https://github.com/pascui89/the-forest.git` con la URL real del repositorio):
    ```bash
-   git clone [URL_DEL_REPOSITORIO](https://github.com/pascui89/the-forest.git)
+   git clone https://github.com/pascui89/the-forest.git
    ```
 4. Una vez clonado, navega al directorio del repositorio:
    ```bash
