@@ -58,15 +58,14 @@ Ahora tienes una copia local del repositorio y puedes empezar a utilizar los scr
 
 ## Ejecución de Scripts
 
-### Script `load-data.js`
+### Script `save-data.js`
 Este script está diseñado para ejecutar comandos de Git como agregar archivos, hacer commits y empujar cambios a un repositorio remoto. Para ejecutar este script:
 
-1. Guarda el código en un archivo llamado `load-data.js`.
-2. Abre una terminal y navega al directorio donde está el archivo.
-3. Ejecuta el script con:
+1. Abre una terminal y navega al directorio donde está el archivo.
+2. Ejecuta el script con:
    ```bash
-   node load-data.js
+   node save-data.js
    ```
 
-### Otro Script de Git
-Similar al script `load-data.js`, este script permite ejecutar una secuencia de comandos de Git para sincronizar cambios con un repositorio remoto. Sigue los mismos pasos que para `load-data.js`, asegurándote de que el nombre del archivo corresponda al script que deseas ejecutar.
+### Script `load-data.js`
+Similar al script `save-data.js`, este script permite ejecutar una secuencia de comandos de Git para sincronizar cambios con un repositorio remoto. Sigue los mismos pasos que para `load-data.js`, asegurándote de que el nombre del archivo corresponda al script que deseas ejecutar.
