@@ -4,11 +4,11 @@ const executeCommand = (command) => {
     return new Promise((resolve, reject) => {
         exec(command, (error, stdout, stderr) => {
             if (error) {
-                reject(`Se produjo un error: ${error.message}`);
+                reject(`${error.message}`);
                 return;
             }
             if (stderr) {
-                console.info(`Error de Git: ${stderr}`);
+                console.info(`Git info: ${stderr}`);
             }
             resolve(`Salida: ${stdout}`);
         });
